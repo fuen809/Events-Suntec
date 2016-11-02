@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.fufu.eventssuntec.MenuScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/displayName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/networking"
+        android:layout_below="@+id/displayName"
+        android:layout_toStartOf="@+id/displayName"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="190dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/network"
+        android:layout_alignEnd="@+id/navigation" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/events"
+        android:layout_alignBottom="@+id/networking"
+        android:layout_toEndOf="@+id/networking"
+        android:background="@drawable/event"
+        android:layout_alignTop="@+id/networking" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat"
+        android:background="@drawable/chat"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/events"
+        android:layout_alignStart="@+id/events" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation"
+        android:background="@drawable/navigate"
+        android:layout_alignEnd="@+id/displayName"
+        android:layout_marginEnd="28dp"
+        android:layout_below="@+id/events"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
