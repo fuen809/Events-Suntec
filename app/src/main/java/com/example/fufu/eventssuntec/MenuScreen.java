@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class MenuScreen extends AppCompatActivity {
@@ -69,6 +71,9 @@ public class MenuScreen extends AppCompatActivity {
     }
 
     protected void navigation(){
+        Intent myIntent = new Intent(MenuScreen.this, Navigation.class);
+        //myIntent.putExtra("username", username); //Optional parameters
 
+        MenuScreen.this.startActivity(myIntent);
     }
 }
