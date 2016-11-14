@@ -7,16 +7,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.fufu.eventssuntec.NavigationL2">
-
+    tools:context="com.example.fufu.eventssuntec.NavigationL4">
     <ImageView
         android:layout_width="1000dp"
         android:layout_height="2000dp"
         android:scaleType="fitXY"
-        android:id="@+id/suntecl2"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/suntec_l2" />
+        android:id="@+id/suntecl1"
+        android:src="@drawable/suntec_l4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         style="?android:attr/buttonStyleSmall"

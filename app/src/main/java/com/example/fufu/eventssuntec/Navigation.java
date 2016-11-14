@@ -43,8 +43,7 @@ public class Navigation extends AppCompatActivity implements View.OnClickListene
         four.setOnClickListener(this); // calling onClick() method
         Button five = (Button) findViewById(R.id.fiveButton);
         five.setOnClickListener(this);
-        Button six = (Button) findViewById(R.id.sixButton);
-        six.setOnClickListener(this);
+
 
 
     }
@@ -69,24 +68,20 @@ public class Navigation extends AppCompatActivity implements View.OnClickListene
 
             case R.id.threeButton:
                 // do your code
-                Intent myIntent3 = new Intent(Navigation.this, NavigationL2.class);
+                Intent myIntent3 = new Intent(Navigation.this, NavigationL3.class);
                 Navigation.this.startActivity(myIntent3);
                 break;
             case R.id.fourButton:
                 // do your code
-                Intent myIntent4 = new Intent(Navigation.this, NavigationL2.class);
+                Intent myIntent4 = new Intent(Navigation.this, NavigationL4.class);
                 Navigation.this.startActivity(myIntent4);
                 break;
             case R.id.fiveButton:
                 // do your code
-                Intent myIntent5 = new Intent(Navigation.this, NavigationL2.class);
+                Intent myIntent5 = new Intent(Navigation.this, NavigationL5.class);
                 Navigation.this.startActivity(myIntent5);
                 break;
-            case R.id.sixButton:
-                // do your code
-                Intent myIntent6 = new Intent(Navigation.this, NavigationL2.class);
-                Navigation.this.startActivity(myIntent6);
-                break;
+
 
             default:
                 break;

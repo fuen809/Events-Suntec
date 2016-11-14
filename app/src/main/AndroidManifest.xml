@@ -18,16 +18,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuScreen"
-            android:launchMode="singleTask"/>
         <activity
-            android:launchMode="singleTask"
+            android:name=".MenuScreen"
+            android:launchMode="singleTask" />
+        <activity
             android:name=".chat"
             android:label="@string/title_activity_chat"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".Navigation"
-            android:launchMode="singleTask"></activity>
-        <activity android:name=".NavigationL2"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Navigation"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".NavigationL2"
+            android:launchMode="singleTask" />
+        <activity android:name=".NavigationL3"
+            android:launchMode="singleTask"/>
+        <activity android:name=".NavigationL4"
+            android:launchMode="singleTask"/>
+        <activity android:name=".NavigationL5"
             android:launchMode="singleTask"></activity>
     </application>
 

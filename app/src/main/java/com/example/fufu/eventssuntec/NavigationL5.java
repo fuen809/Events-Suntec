@@ -6,13 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class NavigationL2 extends AppCompatActivity implements View.OnClickListener{
+public class NavigationL5 extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_navigation_l2);
-
+        setContentView(R.layout.activity_navigation_l5);
         //setting onclick listeners
         Button one = (Button) findViewById(R.id.oneButton);
         one.setOnClickListener(this); // calling onClick() method
@@ -25,7 +24,6 @@ public class NavigationL2 extends AppCompatActivity implements View.OnClickListe
         four.setOnClickListener(this); // calling onClick() method
         Button five = (Button) findViewById(R.id.fiveButton);
         five.setOnClickListener(this);
-
     }
     @Override
     public void onClick(View v) {
@@ -34,30 +32,30 @@ public class NavigationL2 extends AppCompatActivity implements View.OnClickListe
 
             case R.id.oneButton:
                 // do your code
-                Intent myIntent = new Intent(NavigationL2.this, Navigation.class);
-                NavigationL2.this.startActivity(myIntent);
+                Intent myIntent = new Intent(NavigationL5.this, Navigation.class);
+                NavigationL5.this.startActivity(myIntent);
                 break;
 
             case R.id.twoButton:
                 // do your code
-                Intent myIntent2 = new Intent(NavigationL2.this, NavigationL2.class);
-                NavigationL2.this.startActivity(myIntent2);
+                Intent myIntent2 = new Intent(NavigationL5.this, NavigationL2.class);
+                NavigationL5.this.startActivity(myIntent2);
                 break;
 
             case R.id.threeButton:
                 // do your code
-                Intent myIntent3 = new Intent(NavigationL2.this, NavigationL3.class);
-                NavigationL2.this.startActivity(myIntent3);
+                Intent myIntent3 = new Intent(NavigationL5.this, NavigationL3.class);
+                NavigationL5.this.startActivity(myIntent3);
                 break;
             case R.id.fourButton:
                 // do your code
-                Intent myIntent4 = new Intent(NavigationL2.this, NavigationL4.class);
-                NavigationL2.this.startActivity(myIntent4);
+                Intent myIntent4 = new Intent(NavigationL5.this, NavigationL4.class);
+                NavigationL5.this.startActivity(myIntent4);
                 break;
             case R.id.fiveButton:
                 // do your code
-                Intent myIntent5 = new Intent(NavigationL2.this, NavigationL5.class);
-                NavigationL2.this.startActivity(myIntent5);
+                Intent myIntent5 = new Intent(NavigationL5.this, NavigationL5.class);
+                NavigationL5.this.startActivity(myIntent5);
                 break;
 
 
@@ -67,3 +65,4 @@ public class NavigationL2 extends AppCompatActivity implements View.OnClickListe
 
     }
 }
+
