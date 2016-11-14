@@ -42,8 +42,35 @@
         android:layout_height="wrap_content"
         android:text="L3"
         android:id="@+id/threeButton"
-        android:layout_alignBottom="@+id/twoButton"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/twoButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="L6"
+        android:id="@+id/fourButton"
+        android:layout_alignBottom="@+id/threeButton"
+        android:layout_toEndOf="@+id/threeButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="L6(S)"
+        android:id="@+id/fiveButton"
+        android:layout_alignBottom="@+id/fourButton"
+        android:layout_toEndOf="@+id/fourButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="L7"
+        android:id="@+id/sixButton"
+        android:layout_alignBottom="@+id/fiveButton"
+        android:layout_toEndOf="@+id/fiveButton" />
 
 
 </RelativeLayout>
