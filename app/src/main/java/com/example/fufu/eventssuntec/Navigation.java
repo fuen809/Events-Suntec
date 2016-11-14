@@ -56,12 +56,14 @@ public class Navigation extends AppCompatActivity implements View.OnClickListene
             case R.id.oneButton:
                 // do your code
                 Intent myIntent = new Intent(Navigation.this, Navigation.class);
+                //myIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 Navigation.this.startActivity(myIntent);
                 break;
 
             case R.id.twoButton:
                 // do your code
                 Intent myIntent2 = new Intent(Navigation.this, NavigationL2.class);
+                //myIntent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 Navigation.this.startActivity(myIntent2);
                 break;
 
